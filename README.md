@@ -1,33 +1,20 @@
-Assignment 4 - Components
-===
+# Aishwarya Silam
+# Assignment 3
 
-Due: September 25th, by 1:59 PM.
+## Track Em (A Habit Tracker)
+## Render Link: https://a3-aishwaryasilam-1.onrender.com 
 
-For this assignment you will re-implement the client side portion of *either* A2 or A3 using either React or Svelte components. If you choose A3 you only need to use components for the data display / updating; you can leave your login UI as is.
+## Project Summary
+A full-stack webpage that helps users create, track, and manage their personal habits. Key aspects of this application include a secure dashboard where users can track habits, customize frequencies, and update/delete entries. A separate user login and registration page allows for a clean, minimal, and intuitive user experience. This approach allows a clean separation with the Mongoose models and a much more reliable session management system. Using **Bootstrap 5** and **Google Fonts** allowed for a minimalist and clean theme while maintianig professionalism.
 
-[Svelte Tutorial](https://github.com/cs-4241-26a/cs-4241-26a.github.io/blob/main/using.svelte.md)  
-[React Tutorial](https://github.com/cs-4241-26a/cs-4241-26a.github.io/blob/main/using.react.md)  
+## Technical Achievements
+  1. **`express-session`**: Manages user session state and cookies across HTTP requests.
+  2. **`mongoose`**: Provides schema-based object data modeling for MongoDB, structuring user and habit records.
+  3. **`dotenv`**: Loads environment variables securely from a `.env` file into `process.env` to protect database credentials.
+  4. **`connect-mongo`**: Stores Express session data directly in MongoDB, ensuring sessions persist across server restarts.
 
-This project can be implemented on any hosting service (Glitch, DigitalOcean, Heroku etc.), however, you must include all files in your GitHub repo so that the course staff can view them.
-
-Deliverables
----
-
-Do the following to complete this assignment:
-
-1. Implement your project with the above requirements.
-3. Test your project to make sure that when someone goes to your main page on Render/Heroku/etc., it displays correctly.
-4. Ensure that your project has the proper naming scheme `a4-firstname-lastname` so we can find it.
-5. Fork this repository and modify the README to the specifications below. Be sure to add *all* project files.
-6. Create and submit a Pull Request to the original repo. Name the pull request using the following template: `a4-firstname-lastname`.
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-## Your Web Application Title
-
-your hosting link e.g. http://a4-charlieroberts.me
-
-Include a very brief summary of your project here and what you changed / added to assignment #3. Briefly (3–4 sentences) answer the following question: did the new technology improve or hinder the development experience?
-
-Unlike previous assignments, this assignment will be solely graded on whether or not you successfully complete it. Partial credit will be generously given.
+### Design/Evaluation Achievements
+- **Contrast (Dark Mode)**: Allows for much more contrast and stylistically draws users eyes to importnat elements (i.e. create habit, login, register, etc.)
+- **Repetition (Design elements)**: Design elements are used consistently across all views (`login.ejs`, `register.ejs`, and `dashboard.ejs`). The card components (`card shadow-sm text-bg-dark`) and typography are used consistently to maintain uniformity.
+- **Alignment**: Uniformity of left-aligned form labels, table cells, and structured card layouts helps to create a scannable vertical rhythm, guiding the users eye naturally makign the webpage have a very intuitive feel.
+- **Proximity**: Related elements (i.e. Update, Delete) are grouped closely together within Bootstrap grid columns. Intuitively helping users see the functional relationships amongst elements.
