@@ -1,16 +1,21 @@
-# React + Vite
+# Aishwarya Silam - Assignment 4
+# Track 'Em - Habit Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, full-stack Single-Page Application (SPA) habit tracker built with **React**, **Express**, **Node.js**, and **MongoDB**. This assignment refactors the server-rendered application created in assignment 3 into a decoupled client-server architecture that supports complete CRUD functionality and user session authentication.
 
-Currently, two official plugins are available:
+## Render: ----
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+* **React Frontend**: Dynamic client-side rendering using modular components (`App.jsx`, `HabitForm.jsx`, `HabitTable.jsx`) allowing for webpage updates without haveing to reload the full page.
+* **RESTful API Backend**: Express server configured with JSON-based REST endpoints supporting GET, POST, PUT, and DELETE operations.
+* **Database Integration**: MongoDB persistence using Mongoose to manage user-specific habit data and habit reminder date data.
+* **User Authentication**: Secure session management for user-isolated data views.
 
-## React Compiler
+## Tech Stack
+* **Frontend**: React, Vite, CSS
+* **Backend**: Node.js, Express, Express-Session
+* **Database**: MongoDB / Mongoose
+* **Hosting**: Render
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Reflection
+Moving from EJS to a React Single-Page Application definitely improved the user experience. Not only is the UI much more responsive, but it eliminates the potential of full page reloads as data intake increases.However, implementing this did have some complexity. I had to build a decoupled build pipeline and figure out how ot manage asynchronous state between the client and API backend. Overall, in terms of scaling this application, moving from EJS to React is a better move and more effective.
